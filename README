@@ -3,6 +3,13 @@ sbg6850-munin
 
 Munin plugin for Motorola/Arris SBG6850.
 
+Features
+=============
+Graphs for:
+- Downstream/upstream power
+- Downstream errors (uncorrectable, correctable)
+- Downstream SNR
+
 Notes
 =============
 - Only tested with firmware SBG6580-6.5.2.0, almost certainly won't work with the new Arris firmware.
