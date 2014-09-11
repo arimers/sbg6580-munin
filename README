@@ -1,0 +1,11 @@
+sbg6850-munin
+=============
+
+Munin plugin for Motorola/Arris SBG6850.
+
+Notes
+=============
+- Only tested with firmware SBG6580-6.5.2.0, almost certainly won't work with the new Arris firmware.
+- Does not handle login
+- URL currently hard coded
+
