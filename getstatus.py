@@ -33,20 +33,15 @@ def parseContent6500(content):
 
   upstream = soup.find(text='Upstream Bonded Channels')
   upstreamtable = upstream.findParent('table')
-  #print repr(upstreamtable)
-#  assert(len(upstream) == 1)
   channelrows = upstreamtable.findAll('tr')
-  #print repr(channelrows)
   for row in channelrows:
     cols = row.findAll('td')
     if len(cols) == 1:
       continue
-    #print repr(cols)
     assert(len(cols) == 7)
     num = cols[0].contents[0]
     if num == "Channel":
       continue
-    #print repr(num)
     chan = {}
     chan['number'] = num
     chan['lockStatus'] = cols[1].contents[0]
